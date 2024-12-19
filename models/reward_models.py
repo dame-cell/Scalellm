@@ -24,8 +24,7 @@ class RLHFModel:
     else:
       return self.score_single(question,outputs)
     
-  # COPIED FROM https://github.com/huggingface/search-and-learn/blob/main/src/sal/models/reward_models.py
-  # TO DO: TOO SLOW CAN WE SPEED IT UP ? 
+  # COPIED FROM https://github.com/huggingface/search-and-learn/blob/main/src/sal/models/reward_models.py 
   def _score_single(self, questions: list[str], outputs: list[list[str]]):
       # reference code: https://github.com/RLHFlow/RLHF-Reward-Modeling/blob/main/math-rm/prm_evaluate.py
       all_scores = []
